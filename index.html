@@ -1,9 +1,25 @@
-<!doctype html>
 <html>
-  <head>
-    <title>JavaScript for Kids</title>
-  </head>
-  <body>
-    <script src="word-guess.js"></script>
-  </body>
+    <head>
+            <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+        <link rel="stylesheet" href="css/style.css">
+    </head>
+    <body>
+        <div class="hangman">
+            <div class="guess"></div>
+            <form class="guessForm">
+                <input type="text" class="guessLetter" maxlength="1"  placeholder="Guess The Word &#x23ce;"/> <button type="submit" class="guessButton">Guess</button>
+            </form>  
+            <div class="wrong">
+                <div class="wrongLetters"></div>
+            </div>
+            <div class="message">
+                <h1 class="title"></h1>
+                <p class="text"></p>
+                <button class="restart button">Play Again?</button>       
+            </div>
+        </div>
+        <script src="js/jquery-3.3.1.min.js"></script>
+        <script src="js/main.js"></script>
+    </body>
+
 </html>
